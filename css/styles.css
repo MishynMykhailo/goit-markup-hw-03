@@ -254,8 +254,8 @@ img {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: #212121;
+  margin-bottom: 50px;
 }
 .team-name {
   font-weight: 500;
@@ -278,8 +278,8 @@ img {
   color: #757575;
   margin-bottom: 30px;
 }
-.photo-team {
-  margin-bottom: 30px;
+.text-team-cont {
+  padding-top: 30px;
 }
 /*----------------------------Футер----------------------------*/
 .footer-container {
