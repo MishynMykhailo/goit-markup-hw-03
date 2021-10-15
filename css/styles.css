@@ -6,6 +6,39 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .list {
   list-style: none;
 }
@@ -29,8 +62,18 @@ button {
 .logo-name-ft {
   font-family: "Raleway", sans-serif;
 }
-/*Хедер*/
-/*Лого*/
+/*----------------------------Хедер----------------------------*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header-cont {
+  display: flex;
+  align-items: center;
+}
+
+/*----------------------------Лого----------------------------*/
 .title-hd,
 .title-hd-st {
   font-weight: 700;
@@ -44,7 +87,25 @@ button {
 .title-hd-st {
   color: #000000;
 }
-/*Меню навигации сайта*/
+.header-logo-cont {
+  margin-right: 93px;
+}
+/*----------------------------Меню навигации сайта----------------------------*/
+.nav-list {
+  display: flex;
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.cont-container {
+  margin-left: auto;
+}
+.cont-menu-container {
+  display: flex;
+}
+.nav-cont-item:not(:last-child) {
+  margin-right: 50px;
+}
 .nav-sect-hd .link-hd,
 .link-hd-cont {
   font-weight: 500;
@@ -72,7 +133,18 @@ button {
 .link-hd.current {
   color: #2196f3;
 }
-/*Главная Секция*/
+/*----------------------------Главная Секция----------------------------*/
+.hero-title-cont {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-cont {
+  width: 696px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
 .hero-text-sect {
   background-color: #2f303a;
 }
@@ -95,7 +167,15 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px 10px 32px;
+  border: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
+
 .button-hero-sect:hover,
 .button-hero-sect:focus {
   background-color: #188ce8;
@@ -107,6 +187,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  margin-bottom: 10px;
 }
 .char-text-p {
   font-size: 14px;
@@ -114,7 +195,21 @@ button {
   letter-spacing: 0.03em;
   color: #757575;
 }
-/*Чем мы занимаемся*/
+.list-block-cont {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.list-pre-title {
+  width: 270px;
+}
+.list-pre-title:not(:last-child) {
+  margin-right: 30px;
+}
+/*----------------------------Чем мы занимаемся----------------------------*/
+.our-works-container {
+  padding-bottom: 94px;
+}
 .our-works {
   font-weight: 700;
   font-size: 36px;
@@ -122,8 +217,39 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 50px;
 }
-/*Наша команда*/
+
+.list-our-works {
+  display: flex;
+  margin-left: -30px;
+}
+
+.our-works-photo:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-works-photo {
+  flex-basis: cal(100% / 3 - 30px);
+  margin-left: 30px;
+}
+/*----------------------------Наша команда----------------------------*/
+.our-team-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.item-team-container:not(:last-child) {
+  margin-right: 30px;
+}
+.team-list-container {
+  display: flex;
+}
+.team-cards {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  border: 0px;
+}
 .our-team-sect {
   background-color: #f5f4fa;
 }
@@ -139,13 +265,14 @@ button {
 .team-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
+  line-height: 1.18;
 
   text-align: center;
   letter-spacing: 0.03em;
 
   color: #212121;
+
+  margin-bottom: 10px;
 }
 .team-text-p {
   font-size: 16px;
@@ -154,8 +281,16 @@ button {
   letter-spacing: 0.03em;
 
   color: #757575;
+  margin-bottom: 30px;
 }
-/*Футер*/
+.photo-team {
+  margin-bottom: 30px;
+}
+/*----------------------------Футер----------------------------*/
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer-sect {
   background-color: #2f303a;
 }
@@ -165,6 +300,8 @@ button {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .logo-web-ft {
   color: #2196f3;
@@ -189,8 +326,10 @@ button {
 .link-cont-ft:focus {
   color: #ffffff;
 }
-
-/*ПОРТФОЛИО*/
+.footer-item-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+/*--------------------------------------------------------ПОРТФОЛИО--------------------------------------------------------*/
 /*Button - Кнопки*/
 .button-filter.current-button {
   background-color: #2196f3;
@@ -210,7 +349,7 @@ button {
   background-color: #2196f3;
   color: #ffffff;
 }
-/*Текст Галлереи*/
+/*----------------------------Текст Галлереи----------------------------*/
 .text-filters {
   font-weight: 700;
   font-size: 18px;
