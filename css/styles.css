@@ -64,8 +64,6 @@ img {
 }
 /*----------------------------Хедер----------------------------*/
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -116,6 +114,9 @@ img {
 }
 .link-hd {
   color: #212121;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 .title-hd,
 .nav-sect-hd .link-hd,
@@ -135,19 +136,16 @@ img {
   color: #2196f3;
 }
 /*----------------------------Главная Секция----------------------------*/
-.hero-title-cont {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
 .hero-cont {
-  width: 696px;
-  height: 120px;
+  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 }
 .hero-text-sect {
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-text {
   font-weight: 900;
@@ -163,9 +161,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  display: block;
   letter-spacing: 0.06em;
   color: #ffffff;
 
@@ -198,14 +194,16 @@ img {
 }
 .list-block-cont {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .list-pre-title {
   width: 270px;
 }
 .list-pre-title:not(:last-child) {
   margin-right: 30px;
+}
+.section-block-cont {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /*----------------------------Чем мы занимаемся----------------------------*/
 .our-works-container {
@@ -227,14 +225,12 @@ img {
 
 .our-works-photo:not(:last-child) {
   margin-right: 30px;
+  width: 370px;
 }
 /*----------------------------Наша команда----------------------------*/
-.our-team-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .item-team-container:not(:last-child) {
   margin-right: 30px;
+  width: 270px;
 }
 .team-list-container {
   display: flex;
@@ -247,6 +243,8 @@ img {
 }
 .our-team-sect {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .our-team-text {
   font-weight: bold;
@@ -276,18 +274,16 @@ img {
   letter-spacing: 0.03em;
 
   color: #757575;
-  margin-bottom: 30px;
 }
 .text-team-cont {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 /*----------------------------Футер----------------------------*/
-.footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .footer-sect {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-name-ft {
   font-weight: 700;
@@ -371,10 +367,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
+  margin-bottom: -30px;
 }
 .gallery-portf-list {
   margin-right: 30px;
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc(100% - 3 * 30px)/30px);
 
   margin-bottom: 30px;
 }
